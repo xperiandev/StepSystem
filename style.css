@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Gabarito';
+  src: local('Gabarito'),
+  url('/fonts/gabarito.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --grid-unit: 1rem;
+  --border-radius-base: 0.5rem;
+  --color-accent: #1E90FF
+}
+
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000
+}
+
+[data-theme="dark"] {
+  --color-bg: #212121;
+  --color-fg: #ffffff;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.flexcenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ml10{
+  margin-left: 10px;
+}
+
+.highlight{
+  background-color: var(--color-accent);
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight-caution{
+  padding: 5%;
+  border-left: 5px solid yellow;
+  background-color: rgb(55, 55, 0);
+}
+
+html{
+  font-family: Gabarito;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+a{
+  color: var(--color-accent);
+}
+
+.logo, .toggle-svg{
+  stroke: var(--color-fg);
+}
+
+.top{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1{
+    margin: 0;
+  }
+  button{
+    background-color: var(--color-bg);
+    border: none;
+  }
+}
+
+footer{
+  border-radius: var(--border-radius-base);
+  padding-bottom: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+  }
+}
